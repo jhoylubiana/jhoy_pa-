@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aula de git - Prática</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <main class="card">
+        <span class="badge">Aula Git - Prof° Cauã</span>
+        <h1>Códigos do Git</h1>
+        <p>Vamos comitar essa codificação e linkar no GITHUB</p>
+        <a href="#" class="btn">
+            <span>Vamos Brincar hahaha</span>
+        </a>
+    </main>
+
+
+    <section class="conteudo">
+
+        <h1>O que é GIT e GITHUB</h1>
+
+        <div class="informacoes">
+                
+        <div class="info-card">
+
+            <h3>Git</h3>
+
+            <p>O Git é um sistema de controle de versões que permite acompanhar as alterações realizadas nos arquivos de um projeto.</p>
+
+            <p>Com ele, podemos registrar alterações, recuperar versões anteriores e trabalhar em equipe.</p>
+
+        </div>
+
+        <div class="info-card">
+
+            <h3>GitHub</h3>
+
+            <p>O GitHub é uma plataforma online que permite armazenar e compartilhar repositórios Git</p>
+
+            <p>Por meio dele, podemos compartilhar projetos, colaborar com outros desenvolvedores e visualizar o histórico de alterações</p>
+
+        </div>
+
+        </div>
+
+    </section>
+
+    <nav class="menu-estudo" aria-label="Navegação dos estudos">
+        <a href="#comandos">Consultar comandos</a>
+        <a href="#atividade">Minha atividade</a>
+        <a href="#materias">Materiais de apoio</a>
+
+        <section class="conteudo estudo" id="comando">
+            <h2>Comandos para praticar</h2>
+            <p>Clique em um comando para abrir sua explicação. No teclado, use Tab e Enter.</p>
+
+            <details>
+                <summary>1. git init - iniciar um repositorio</summary>
+                <p>Execute na pasta do projeto para começar controlar as suas versões</p>
+                <code>git init</code>
+            </details>
+            <details>
+                <summary>2. git status - conferir as alteraçoes</summary>
+                <p>Mostra quais arquivos foram modificados e quais estão preparados para o proximo commit.</p>
+                <code>git status</code>
+            </details>
+            <details>
+                <summary>3. git add - preparar os arquivos</summary>
+                <p>Prepara as alterações dos dois arquivos para o proximo commit. Ainda não cria uma versão </p>
+                <code>git add index.html style.css</code>
+            </details>
+            <details>
+                <summary>4. git commit - registra uma versão </summary>
+                <p>Registra as alteraçoes preparadas. Escreva uma menssagem que expliquem oque voce fez</p>
+                <code>git commit -m "Adiciona area de estudos"</code>
+            </details>
+            <details>
+                <summary>5. git log - consultar o historico</summary>
+                <p>Exibe os commits de forma resumida, com um registro por linha.</p>
+                <code>git log --oneline</code>
+            </details>
+            <details>
+                <summary>6. git push - enviar para o GitHub</summary>
+                <p>Envia os commits para o repositorio remoto. Este exemplo exige um remoto chamado 
+                    origin, uma branch chamada main e autenticação configurados com o professor. </p>
+                    <code>git push -u origin main</code>
+            </details>
+        </section>
+    </nav>
+
+</body>
+</html>
